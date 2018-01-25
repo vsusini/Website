@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul, nav {
+    text-align: left;
+    list-style:none;
+}
+
+.hr1 {
+    width:450px;
+    height:2px;
+    background-color:#252424;
+    border:0;
+    margin:30px auto;
+}
+
+body {
+    font: normal 16px "Arial",sans-serif;
+    color: #555;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+section {
+    background-color: #fff;
+    padding: 50px 100px;
+    /*max-width: 800px;*/
+}
+    section p{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
+.round{
+    border:6px solid;
+    border-radius:70%;
+}
+
+.round2 {
+    /*float:left; /*places it to the left*/
+    border: 4px solid;
+    border-radius: 60%;
+}
+.anormal{
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+.profile_pic{
+    float:left;
+}
+
+.awork{
+    text-decoration:none;
+    cursor:pointer;
+    color:inherit;
+}
+
+a:hover{
+    opacity:1;
+}
+
+/*----------------
+    Header
+------------------*/
+
+header {
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    header nav {
+        display: flex;
+    }
+
+        header nav li {
+            margin: 0 15px;
+        }
+
+            header nav li:first-child {
+                margin-left: 0;
+            }
+
+            header nav li:last-child {
+                margin-right: 0;
+            }
+
+@media(max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+        header h2 {
+            margin-bottom: 15px;
+        }
+}
+
+/*----------------
+    Main Picture
+------------------*/
+
+.top{
+    background-color:transparent;
+    position:relative;
+    justify-content:center;
+    min-height:70vh;
+    color:#fff;
+    text-align: center;
+}
+
+    .top .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-color: #1a77c1;
+    }
+
+        .top .background-image:after {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #414a4f;
+            opacity: 0.3;
+        }
+
+.top h1{
+    font: bold 60px 'Georgia', serif;
+    font-size:90px;
+    text-shadow:3px 3px #000;
+    margin-bottom:15px;
+}
+
+@media(max-width:800px) {
+    .top {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+/*----------------
+    Objective
+------------------*/
+
+.obj{
+    background-color:#f7f7f7; 
+}
+
+.obj ul{
+    list-style:disc;
+    list-style-position:inside;
+    line-height:1.5;
+}
+
+    .obj h3 {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        /*text-decoration:underline;*/
+        font-size: 33px;
+    }
+
+/*----------------
+    Profile
+------------------*/
+
+@media(max-width: 1000px) {
+    profile{
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width: 700px) {
+    profile{
+        flex-direction: column;
+    }
+
+        profile h4 {
+            margin-bottom: 15px;
+        }
+}
+
+.pro {
+    background-color: #fff;
+}
+
+    .pro ul {
+        list-style: disc;
+        list-style-position:inside;
+        line-height: 1.5;
+    }
+
+    .pro h3 {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        /*text-decoration:underline;*/
+        font-size: 33px;
+    }
+
+/*----------------
+    Work Exp
+------------------*/
+
+.exp {
+    background-color: #f7f7f7;
+}
+
+    .exp ul {
+        list-style: disc;
+        list-style-position: inside;
+        line-height: 1.5;
+    }
+    /*To fix the parts of the experience you can just take out the h3 and h4 to change everything back to the center.*/
+    .exp h3 {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        /*text-decoration:underline;*/
+        font-size: 33px;
+    }
+
+    .exp h4{
+        font-size:30px;
+        text-align:left;
+        padding:20px;
+    }
+
+    .exp p{
+        text-align:left;
+    }
+
+/*----------------
+    Contact
+------------------*/
+
+.contact{
+    background-color:#fff;
+}
+
+.contact h3 {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    /*text-decoration:underline;*/
+    font-size: 33px;
+}
+
+/*----------------
+    Footer
+------------------*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color:#444;
+    color:#fff;
+    padding:60px 0;
+    text-align:center;
+    align-items:center;
+}
+
+footer ul{
+    display:flex;
+    margin-bottom:25px;
+    font-size:10px;
+}
+
+footer ul li{
+    margin: 0 8px;
+}
+
+footer ul li:first-child{
+    margin-left:0;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size:14px;
+    color:rgba(255,255,255,.6);
+    margin-bottom:10px;
+}
+
+footer p a{
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    footer{
+        padding:80px 15px
+    }
+}
+
+
