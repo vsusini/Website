@@ -1,323 +1,180 @@
+@font-face { 
+    font-family: Champ; src: url('assets/Champagne.ttf'); 
+} 
+ @font-face { 
+    font-family: ChampBold; font-weight: bold; src: url("assets/ChampagneBold.ttf");
+    }
+@font-face { 
+    font-family: ChampIt; font-weight: italic; src: url('assets/ChampagneItalic.ttf');
+    }
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-ul, nav {
-    text-align: left;
-    list-style:none;
-}
-
-.hr1 {
-    width:450px;
-    height:2px;
-    background-color:#252424;
-    border:0;
-    margin:30px auto;
-}
-
 body {
-    font: normal 16px "Arial",sans-serif;
+    font-family: Champ;
     color: #555;
-    text-align: center;
-    background-color: #f7f7f7;
+    text-align: left;
+    background-color: white;
 }
 
-section {
-    background-color: #fff;
-    padding: 50px 100px;
-    /*max-width: 800px;*/
-}
-    section p{
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 0 10px;
-        line-height: 1.5;
-    }
-
-.round{
-    border:6px solid;
-    border-radius:70%;
+.mainStart{
+    height: 100vh;
+    font-size: 7vh;
+    background-color:white;
 }
 
-.round2 {
-    /*float:left; /*places it to the left*/
-    border: 4px solid;
-    border-radius: 60%;
-}
-.anormal{
-    text-decoration:none;
-    color:inherit;
-    cursor:pointer;
-    opacity:0.9;
-}
-
-.profile_pic{
-    float:left;
-}
-
-.awork{
-    text-decoration:none;
-    cursor:pointer;
-    color:inherit;
-}
-
-a:hover{
-    opacity:1;
-}
-
-/*----------------
-    Header
-------------------*/
-
-header {
-    background-color: rgba(0,0,0,.7);
+.mainHi{
+    font-size: 7vh;
+    /*background-color: green; */
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    align-items: center;
-    color: #fff;
-    padding: 35px 100px 20px;
-    display: flex;
-    justify-content: space-around;
+    top: 20%;
+    right: 20%;
+    left: 10%;
+    width: 20%;
+
 }
 
-    header nav {
-        display: flex;
-    }
-
-        header nav li {
-            margin: 0 15px;
-        }
-
-            header nav li:first-child {
-                margin-left: 0;
-            }
-
-            header nav li:last-child {
-                margin-right: 0;
-            }
-
-@media(max-width: 1000px) {
-    header {
-        padding: 20px 50px;
-    }
+.mainMessage{
+    /*background-color: purple;*/
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 60%;
+    height: 50%;
 }
 
-@media(max-width: 700px) {
-    header {
-        flex-direction: column;
-    }
-
-        header h2 {
-            margin-bottom: 15px;
-        }
+.education{
+    /*background-color: green;*/
+    margin: auto;
+    width: 80%;
 }
 
-/*----------------
-    Main Picture
-------------------*/
-
-.top{
-    background-color:transparent;
-    position:relative;
-    justify-content:center;
-    min-height:70vh;
-    color:#fff;
+.title{
+    margin:auto;
+    width: 60%;
     text-align: center;
 }
 
-    .top .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-size: cover;
-        background-color: #1a77c1;
-    }
-
-        .top .background-image:after {
-            content:'';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #414a4f;
-            opacity: 0.3;
-        }
-
-.top h1{
-    font: bold 60px 'Georgia', serif;
-    font-size:90px;
-    text-shadow:3px 3px #000;
-    margin-bottom:15px;
+.script {
+    font-family: "Champ";
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    margin:0;
+    z-index: 2;
 }
 
-@media(max-width:800px) {
-    .top {
-        min-height: 600px;
-    }
 
-    .hero h1 {
-        font-size: 48px;
-    }
+.spanWhite{
+    background-color:white;
+    padding: 0 0.3em;
 }
 
-/*----------------
-    Objective
-------------------*/
-
-.obj{
-    background-color:#f7f7f7; 
+.spanGrey{
+    background-color:#EEEEEE;
+    padding: 0 0.3em;
 }
 
-.obj ul{
-    list-style:disc;
-    list-style-position:inside;
-    line-height:1.5;
+.script:before {
+    content:"";
+    display: block;
+    position: absolute;
+    z-index:-1;
+    top: 50%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
 }
 
-    .obj h3 {
-        margin-top: -20px;
-        margin-bottom: 20px;
-        /*text-decoration:underline;*/
-        font-size: 33px;
-    }
+.experience{
+    /*background-color: aqua;*/
+    margin: auto;
+    width: 80%;
+}
 
-/*----------------
-    Skills
-------------------*/
+.wrapper{
+    margin:auto;
+    width: 70%;
+    overflow: hidden;
+    padding-top: 4vh;
+}
 
-/* Create three equal columns that floats next to each other */
-.column {
+.imageLigado{
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    padding-right: 4vh;
 }
 
-/* Clear floats after the columns */
-.row:after {
+.imageText{
+    overflow: hidden;
+}
+
+.position{
+    color: rgb(14, 105, 14);
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.date{ font-size: 2.5vh;}
+
+.location{font-size:2.5vh;}
+
+/* All for the links in the positions*/
+
+a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+	position:relative;
+    transition:0.5s color ease;
+	text-decoration:none;
+	color:#81b3d2;
+}
+a:hover{
+	color:#d73444;
+}
+a.before:before,a.after:after{
     content: "";
-    display: table;
-    clear: both;
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+    position:absolute;
+}
+a.before:before{
+    top:-0.15em;
+}
+a.after:after{
+    bottom:-0.15em;
+}
+a.before:before,a.after:after{
+    height:5px;
+    height:0.1rem;
+    width:0;
+    background:#d73444;
+}
+a.first:after{
+    left:0;
 }
 
-.pro {
-    background-color: #fff;
+a.before:hover:before,a.after:hover:after{
+    width:100%;
 }
-
-    .pro ul {
-        list-style: disc;
-        list-style-position:inside;
-        line-height: 1.5;
-    }
-
-    .pro h3 {
-        margin-top: -20px;
-        margin-bottom: 20px;
-        /*text-decoration:underline;*/
-        font-size: 33px;
-    }
-
-/*----------------
-    Work Exp
-------------------*/
-
-.exp {
-    background-color: #f7f7f7;
-}
-
-    .exp ul {
-        list-style: disc;
-        list-style-position: inside;
-        line-height: 1.5;
-    }
-    /*To fix the parts of the experience you can just take out the h3 and h4 to change everything back to the center.*/
-    .exp h3 {
-        margin-top: -20px;
-        margin-bottom: 20px;
-        /*text-decoration:underline;*/
-        font-size: 33px;
-    }
-
-    .exp h4{
-        font-size:30px;
-        text-align:left;
-        padding:20px;
-    }
-
-    .exp p{
-        text-align:left;
-    }
-
-/*----------------
-    Contact
-------------------*/
-
-.contact{
-    background-color:#fff;
-}
-
-.contact h3 {
-    margin-top: -20px;
-    margin-bottom: 20px;
-    /*text-decoration:underline;*/
-    font-size: 33px;
-}
-
-/*----------------
-    Footer
-------------------*/
 
 footer{
-    display:flex;
-    flex-direction: column;
-    background-color:#444;
-    color:#fff;
-    padding:60px 0;
-    text-align:center;
-    align-items:center;
+    background-color: #EEEEEE;
+    z-index: 1;
 }
 
-footer ul{
-    display:flex;
-    margin-bottom:25px;
-    font-size:10px;
+.footerTitle{
+    margin: auto;
+    width: 80%;
 }
 
-footer ul li{
-    margin: 0 8px;
+.footerDesc{
+    text-align: center;
+    font-size: 3vh;
+    padding: 2vh;
 }
-
-footer ul li:first-child{
-    margin-left:0;
-}
-
-footer ul li:last-child {
-    margin-right: 0;
-}
-
-footer p{
-    text-transform: uppercase;
-    font-size:14px;
-    color:rgba(255,255,255,.6);
-    margin-bottom:10px;
-}
-
-footer p a{
-    color: #fff;
-}
-
-@media (max-width: 700px){
-    footer{
-        padding:80px 15px
-    }
-}
-
-
