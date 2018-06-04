@@ -1,8 +1,23 @@
 //alert("This is working!");
 //var ageAsString = prompt("What is your age?", "Write age here!");
 //var age = Number(ageAsString);
-var string = "";
-var animal = "thing";
+$(document).ready(function() {
+    function toggleSidebar() {
+        $(".button").toggleClass("active");
+        $("main").toggleClass("move-to-left");
+        $(".sidebar-item").toggleClass("active");
+    }
+
+    $(".button").on("click tap", function() {
+        toggleSidebar();
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode === 27) {
+        toggleSidebar();
+        }
+    });  
+});
 
 /*
 //SWITCH STATEMENT
