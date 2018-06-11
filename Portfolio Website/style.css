@@ -21,6 +21,10 @@ body {
     background-color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 .mainStart{
     height: 100vh;
     font-size: 7vh;
@@ -139,12 +143,12 @@ body {
     transition:0.5s color ease;
 	text-decoration:none;
     color:#81b3d2;
-    font-size: 3vh; /* Change size of the Link font */
+    font-size: 4vh; /* Change size of the Link font */
 }
 .mainLink a:hover{
 	color:#EA5548;
 }
-.mainLink a.before:before,a.after:after{
+.mainLink a.before:before,.mainLink a.after:after{
     content: "";
     transition:0.5s all ease;
     -webkit-backface-visibility:hidden;
@@ -157,7 +161,7 @@ body {
 .mainLink a.after:after{
     bottom:-0.15em;
 }
-.mainLink a.before:before,a.after:after{
+.mainLink a.before:before,.mainLink a.after:after{
     height:5px;
     height:0.1rem;
     width:0;
@@ -167,11 +171,52 @@ body {
     left:0;
 }
 
-.mainLink a.before:hover:before,a.after:hover:after{
+.mainLink a.before:hover:before,.mainLink a.after:hover:after{
     width:100%;
 }
 
-/* All for the links in the positions*/
+/* Dashboard Links */
+
+.nav-pane a, .nav-pane a:visited,.nav-pane a:hover,.nav-pane a:active{
+    -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+	position:relative;
+    transition:0.5s color ease;
+	text-decoration:none;
+    color:#ffffff;
+    font-size: 3vh; /* Change size of the Link font */
+}
+.nav-pane a:hover{
+	color:rgb(255, 255, 255);
+}
+.nav-pane a.before:before,.nav-pane a.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+    position:absolute;
+}
+.nav-pane a.before:before{
+    top:-0.15em;
+}
+.nav-pane a.after:after{
+    bottom:-0.15em;
+}
+.nav-pane a.before:before,.nav-pane a.after:after{
+    height:5px;
+    height:0.1rem;
+    width:0;
+    background:rgb(255, 255, 255);
+}
+.nav-pane a.first:after{
+    left:0;
+}
+
+.nav-pane a.before:hover:before,.nav-pane a.after:hover:after{
+    width:100%;
+}
+
+/* End of All for the links in the positions*/
 
 footer{
     background-color: #EEEEEE;
@@ -189,13 +234,21 @@ footer{
     padding: 2vh;
 }
 
-.social{
-    margin: auto;
-    width: 80%;
-    text-align: center;
+/* End of All for the links in the positions*/
+
+footer{
+    background-color: #EEEEEE;
+    z-index: 1;
 }
 
-.socialImg{
+.footerTitle{
+    margin: auto;
+    width: 80%;
+}
+
+.footerDesc{
+    text-align: center;
+    font-size: 3vh;
     padding: 2vh;
 }
 
@@ -241,11 +294,12 @@ footer{
 }
 
 .nav-pane h1 {
-    margin: 0;
+    margin: auto;
     text-align: center;
     color: #F1F1F1;
     text-transform: uppercase;
     font-size: 1.5rem;
+    width: 30%
 }
 
 .nav-pane.open {
@@ -363,4 +417,74 @@ footer{
     transition: 250ms;
 }
 
-/* Side Bar Shit */
+/* End of Side Bar Shit */
+
+/* Social Media Icons located at bottom */
+
+.social{
+    margin: auto;
+    width: 80%;
+    position: relative;
+    text-align: center;
+}
+
+.bottomImgLink{
+    background: transparent;
+}
+
+.bottomImgLink:hover{
+    background-color: rgb(243, 113, 96);
+    transition: 0.3s;
+}
+
+.socialImg{
+    padding: 2vh;
+}
+
+.social a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 5vw;
+    height: 5vw;
+    line-height: 5vw;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.social .gp{
+    background: #DD4B39;
+}
+.social .gp:before,.social .gp:after
+{
+    border-color: #DD4B39;
+}
+.social a:before,.social a:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: transparent;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-radius: 50%;
+    transition: .3s all;
+    border: 3px solid;
+}
+.social a:hover:after{
+   -webkit-transform: scale(1.5);
+   transform: scale(1.5);
+}
+.social a:hover:before{
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    transition: .3s all;
+    opacity: 0;
+}
+/* End of Social Media Icons located at bottom */
+
+.bottomPart{
+    margin-top: 3vh;
+    width: 20%;
+
+}
