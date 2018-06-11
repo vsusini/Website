@@ -44,7 +44,7 @@
           m.css("top","0vh");
           n.text("N");
           n.css("color","black");
-          n.css("top","0.vh");
+          n.css("top","0vh");
           u.text("U");
           u.css("color","black");
           u.css("top","0vh");
