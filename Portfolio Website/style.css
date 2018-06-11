@@ -119,20 +119,20 @@ body {
     padding-bottom: 1vh;
 }
 
-.date{ font-size: 2vh;}
+.date{ font-size: 2.25vh;}
 
 .location{
-    font-size:2vh;
+    font-size:2.25vh;
     padding-bottom: 1vh;
 }
 
 .desc{
-    font-size:2vh;
+    font-size:2.25vh;
 }
 
 /* All for the links in the positions*/
 
-a,a:visited,a:hover,a:active{
+.mainLink a,a:visited,a:hover,a:active{
     -webkit-backface-visibility:hidden;
         backface-visibility:hidden;
 	position:relative;
@@ -141,33 +141,33 @@ a,a:visited,a:hover,a:active{
     color:#81b3d2;
     font-size: 3vh; /* Change size of the Link font */
 }
-a:hover{
+.mainLink a:hover{
 	color:#EA5548;
 }
-a.before:before,a.after:after{
+.mainLink a.before:before,a.after:after{
     content: "";
     transition:0.5s all ease;
     -webkit-backface-visibility:hidden;
         backface-visibility:hidden;
     position:absolute;
 }
-a.before:before{
+.mainLink a.before:before{
     top:-0.15em;
 }
-a.after:after{
+.mainLink a.after:after{
     bottom:-0.15em;
 }
-a.before:before,a.after:after{
+.mainLink a.before:before,a.after:after{
     height:5px;
     height:0.1rem;
     width:0;
     background:#EA5548;
 }
-a.first:after{
+.mainLink a.first:after{
     left:0;
 }
 
-a.before:hover:before,a.after:hover:after{
+.mainLink a.before:hover:before,a.after:hover:after{
     width:100%;
 }
 
