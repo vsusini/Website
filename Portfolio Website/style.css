@@ -273,8 +273,10 @@ footer{
     display: -moz-box;
     display: flex;
     -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -moz-box-direction: normal;
+        box-direction: normal;
             flex-direction: column;
     -webkit-justify-content: space-around;
             justify-content: space-around;
@@ -472,8 +474,8 @@ footer{
     border: 3px solid;
 }
 .social a:hover:after{
-   -webkit-transform: scale(1.5);
-   transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 .social a:hover:before{
     -webkit-transform: scale(2);
@@ -489,15 +491,23 @@ footer{
 
 }
 
-.wave:hover{
+.wave{
     animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
+    animation-iteration-count: 2;
     position: relative;
     transform-origin: bottom center;
 }
 
+.waveHover:hover{
+    animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
+    position: relative;
+    transform-origin: bottom center;
+    display: inline-block
+}
+
 @keyframes wavingArm {
     0% {
-      transform: rotate(0deg) translate(0px);
+        transform: rotate(0deg) translate(0px);
     }
     25%{
         transform: rotate(40deg) translate(0px);
@@ -506,6 +516,6 @@ footer{
         transform: rotate(-20deg) translate(0px);
     }
     100% {
-      transform: rotate(0deg) translate(0px);
+        transform: rotate(0deg) translate(0px);
     }
-  }
+}
