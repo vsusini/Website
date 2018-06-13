@@ -1,4 +1,4 @@
 # Profile-Website
-Website for Future Resume Information
-Extreme WIP. Needing more time. Hopefully during the summer. 
-Basics for now are outline. 
+The following files are a Profile or Resume for myself.
+It uses both HTML, CSS and Javascript.
+The website is currently still a WIP but lots of progress has been made.
