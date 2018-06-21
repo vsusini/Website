@@ -57,12 +57,6 @@ a{
     width: 80%;
 }
 
-.skills{
-    /*background-color: green;*/
-    margin: auto;
-    width: 80%;
-}
-
 .title{
     margin:auto;
     width: 45%;
@@ -528,4 +522,45 @@ footer{
 
 ::selection {
     background: #ffd269; /* WebKit/Blink Browsers */
+}
+
+.skills{
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.skillsTitle{
+    color: red;
+    font-size: 2vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    text-align: left;
+}
+
+.sectionSkill{
+    display: inline-block;
+    width: 20%;
+    padding-bottom: 4vh;
+    padding-top: 1vw;
+    vertical-align: top;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 0.5vh;
+    padding: 1vw;
+    font-size: 1.1vw;
+    text-align: left;
+    font-weight: bold;
+}
+
+.raiseText{
+    position: relative;
+    bottom: 0.3vw;
+    padding-left: 0.3vw;
 }
