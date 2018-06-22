@@ -521,7 +521,7 @@ footer{
 }
 
 ::selection {
-    background: #ffd269; /* WebKit/Blink Browsers */
+    background: #ffd269; 
 }
 
 .skills{
