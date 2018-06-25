@@ -107,9 +107,10 @@ a{
     padding-top: 4vh;
 }
 
-.imageLigado{
+.image{
     float: left;
     padding-right: 4vh;
+    object-fit: contain;
 }
 
 .imageText{
@@ -263,7 +264,7 @@ footer{
     -webkit-transform: translateX(350px);
     -moz-transform: translateX(350px);
     -o-transform: translateX(350px);
-            transform: translateX(200vh);
+    transform: translateX(200vh);
     top: 0;
     height: 100vh;
     width: 348px;
@@ -281,7 +282,6 @@ footer{
     -webkit-justify-content: space-around;
             justify-content: space-around;
     box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.5);
-
     float: right;
 }
 
@@ -531,17 +531,42 @@ footer{
     margin: auto;
 }
 
-.skillsTitle{
-    color: red;
+.skillsTitleLan{
     font-size: 2vw;
     padding-top: 4vh;
     margin-top: 4vh;
-    text-align: left;
+    position: relative;
+    left: -1.5vw;
+}
+
+.skillsTitleIndus{
+    font-size: 2vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    left: 0vw;
+}
+
+.skillsTitleSoft{
+    font-size: 2vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    left: -2.5vw;
+}
+
+.skillsTitleOther{
+    font-size: 2vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    left: 0vw;
 }
 
 .sectionSkill{
     display: inline-block;
-    width: 20%;
+    min-width: 15%;
+    max-width: 20%;
     padding-bottom: 4vh;
     padding-top: 1vw;
     vertical-align: top;
