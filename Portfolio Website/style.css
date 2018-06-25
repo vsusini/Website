@@ -56,7 +56,8 @@ a{
 }
 
 .title{
-    margin:auto;
+    margin-top: 5%;
+    margin-left: 30%;
     width: 45%;
     text-align: center;
 }
@@ -65,10 +66,11 @@ a{
     font-family: "Champ";
     color: black;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5vw;
     position: relative;
     margin:0;
     z-index: 2;
+    padding-top: 4%;
 }
 
 
@@ -90,6 +92,7 @@ a{
     top: 50%;
     width: 100%;
     border-bottom: 1.5px solid black;
+    padding-top: 2%;
 }
 
 .experience{
@@ -100,14 +103,18 @@ a{
 .wrapper{
     margin:auto;
     width: 70%;
-    overflow: hidden;
     padding-top: 4vh;
 }
 
 .image{
-    float: left;
+    float: left; /* Remove this for mobile version for text to display. */
     padding-right: 4vh;
-    object-fit: contain;
+}
+
+.sideImg{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20%;
 }
 
 .imageText{
@@ -143,9 +150,26 @@ a{
     color:#81b3d2;
     font-size: 4vh; /* Change size of the Link font */
 }
+
+footer .mainLink a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+	position:relative;
+    transition:0.5s color ease;
+	text-decoration:none;
+    color:#81b3d2;
+    font-size: 2vw; /* Change size of the Link font */
+} 
 .mainLink a:hover{
-	color:#EA5548;
+    color:#EA5548;
+    font-size: 4vh;
 }
+
+footer .mainLink a:hover{
+    color:#EA5548;
+    font-size: 2vw;
+}
+
 .mainLink a.before:before,.mainLink a.after:after{
     content: "";
     transition:0.5s all ease;
@@ -173,49 +197,6 @@ a{
     width:100%;
 }
 
-/* Dashboard Links */
-
-.nav-pane a, .nav-pane a:visited,.nav-pane a:hover,.nav-pane a:active{
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
-	position:relative;
-    transition:0.5s color ease;
-	text-decoration:none;
-    color:#ffffff;
-    font-size: 3vh; /* Change size of the Link font */
-}
-.nav-pane a:hover{
-	color:rgb(255, 255, 255);
-}
-.nav-pane a.before:before,.nav-pane a.after:after{
-    content: "";
-    transition:0.5s all ease;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
-    position:absolute;
-}
-.nav-pane a.before:before{
-    top:-0.15em;
-}
-.nav-pane a.after:after{
-    bottom:-0.15em;
-}
-.nav-pane a.before:before,.nav-pane a.after:after{
-    height:5px;
-    height:0.1rem;
-    width:0;
-    background:rgb(255, 255, 255);
-}
-.nav-pane a.first:after{
-    left:0;
-}
-
-.nav-pane a.before:hover:before,.nav-pane a.after:hover:after{
-    width:100%;
-}
-
-/* End of All for the links in the positions*/
-
 footer{
     background-color: #EEEEEE;
     z-index: 1;
@@ -228,13 +209,14 @@ footer{
 
 .footerDesc{
     text-align: center;
-    font-size: 3vh;
+    font-size: 2vw;
     padding: 2vh;
 }
 
 /* Social Media Icons located at bottom */
 
 .social{
+    padding-top: 4%;
     margin: auto;
     width: 80%;
     position: relative;
@@ -246,12 +228,8 @@ footer{
 }
 
 .bottomImgLink:hover{
-    background-color: rgb(243, 113, 96);
+    background-color: #ffd269;
     transition: 0.3s;
-}
-
-.socialImg{
-    padding: 2vh;
 }
 
 .social a{
@@ -268,10 +246,10 @@ footer{
 }
 
 .social .gp{
-    background: #DD4B39;
+    background: #ffd269;
 }
 .social .gp:before,.social .gp:after {
-    border-color: #DD4B39;
+    border-color: #ffd269;
 }
 .social a:before,.social a:after{
     content: "";
@@ -298,7 +276,29 @@ footer{
 .bottomPart{
     margin-top: 3vh;
     width: 20%;
+}
 
+.emojiOne{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.emojiTitle{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 2vh;
+}
+
+.emojiFooter{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 1vh;
+}
+
+.emojiList{
+    width: 1.3vw;
+    height: 1.3vw;
+    alt: pointer;
 }
 
 .wave{
@@ -306,6 +306,8 @@ footer{
     animation-iteration-count: 2;
     position: relative;
     transform-origin: bottom center;
+    width: 3.5vw;
+    height: 3.5vw;
 }
 
 .waveHover:hover{
@@ -354,7 +356,6 @@ footer{
     padding-top: 4vh;
     margin-top: 4vh;
     position: relative;
-    left: 0vw;
 }
 
 .skillsTitleSoft{
@@ -370,7 +371,6 @@ footer{
     padding-top: 4vh;
     margin-top: 4vh;
     position: relative;
-    left: 0vw;
 }
 
 .sectionSkill{

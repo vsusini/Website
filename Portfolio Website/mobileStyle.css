@@ -1,0 +1,404 @@
+@font-face { 
+    font-family: Champ; src: url('assets/Champagne.ttf'); 
+} 
+@font-face { 
+    font-family: ChampBold; font-weight: bold; src: url("assets/ChampagneBold.ttf");
+    }
+@font-face { 
+    font-family: ChampIt; font-weight: italic; src: url('assets/ChampagneItalic.ttf');
+    }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Champ;
+    color: #555;
+    text-align: left;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mainStart{
+    height: 100vh;
+    font-size: 7vh;
+    background-color:white;
+}
+
+.mainHi{
+    font-size: 5.5vh;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    left: 10%;
+    width: 20%;
+
+}
+
+.mainMessage{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    font-size: 5.5vh;
+}
+
+.education{
+    margin: auto;
+    width: 80%;
+}
+
+.title{
+    margin:auto;
+    width: 60%;
+    text-align: center;
+}
+
+.script {
+    font-family: "Champ";
+    color: black;
+    text-align: center;
+    font-size: 4.5vw;
+    position: relative;
+    margin:0;
+    z-index: 2;
+    padding-top: 4%;
+}
+
+
+.spanWhite{
+    background-color:white;
+    padding: 0 0.3em;
+}
+
+.spanGrey{
+    background-color:#EEEEEE;
+    padding: 0 0.3em;
+}
+
+.script:before {
+    content:"";
+    display: block;
+    position: absolute;
+    z-index:-1;
+    top: 50%;
+    width: 120%;
+    border-bottom: 1.5px solid black;
+    left: -3.5vw;
+    padding-top: 2%;
+}
+
+.experience{
+    margin: auto;
+    width: 80%;
+}
+
+.wrapper{
+    margin:auto;
+    width: 70%;
+    padding-top: 4vh;
+}
+
+.image{
+    padding-right: 4vh;
+}
+
+.imageText{
+    overflow: hidden;
+}
+
+.position{
+    color: rgb(14, 105, 14);
+    font-size: 2.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.date{ font-size: 2.25vh;}
+
+.location{
+    font-size:2.25vh;
+    padding-bottom: 1vh;
+}
+
+.desc{
+    font-size:2.25vh;
+}
+
+/* All for the links in the positions*/
+
+.mainLink a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+	position:relative;
+    transition:0.5s color ease;
+	text-decoration:none;
+    color:#81b3d2;
+    font-size: 4.5vw; /* Change size of the Link font */
+}
+
+footer .mainLink a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+	position:relative;
+    transition:0.5s color ease;
+	text-decoration:none;
+    color:#81b3d2;
+    font-size: 4vw; /* Change size of the Link font */
+}
+
+.mainLink a:hover{
+    color:#EA5548;
+    font-size: 4.5vw;
+}
+
+footer .mainLink a:hover{
+    color:#EA5548;
+    font-size: 4vw;
+}
+
+.mainLink a.before:before,.mainLink a.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:absolute;
+}
+.mainLink a.before:before{
+    top:-0.15em;
+}
+.mainLink a.after:after{
+    bottom:-0.15em;
+}
+.mainLink a.before:before,.mainLink a.after:after{
+    height:5px;
+    height:0.1rem;
+    width:0;
+    background:#EA5548;
+}
+.mainLink a.first:after{
+    left:0;
+}
+
+.mainLink a.before:hover:before,.mainLink a.after:hover:after{
+    width:100%;
+}
+
+footer{
+    background-color: #EEEEEE;
+    z-index: 1;
+}
+
+.footerTitle{
+    margin: auto;
+    width: 80%;
+}
+
+.footerDesc{
+    text-align: center;
+    font-size: 4vw;
+    padding: 2vh;
+}
+
+/* Social Media Icons located at bottom */
+
+.social{
+    margin: auto;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.bottomImgLink{
+    background: transparent;
+}
+
+.bottomImgLink:hover{
+    background-color: #ffd269;
+    transition: 0.3s;
+}
+
+.socialImg{
+    padding: 2vh;
+}
+
+.social a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 5vw;
+    height: 5vw;
+    line-height: 5vw;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.social .gp{
+    background: #ffd269;
+}
+.social .gp:before,.social .gp:after {
+    border-color: #ffd269;
+}
+.social a:before,.social a:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: transparent;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-radius: 50%;
+    transition: .3s all;
+    border: 3px solid;
+}
+.social a:hover:after{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.social a:hover:before{
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    transition: .3s all;
+    opacity: 0;
+}
+/* End of Social Media Icons located at bottom */
+
+.emojiOne{
+    width: 5.5vw;
+    height: 5.5vw;
+}
+
+.emojiTitle{
+    width: 4.5vw;
+    height: 4.5vw;
+    margin-left: 2vh;
+}
+
+.emojiFooter{
+    width: 4vw;
+    height: 4vw;
+    margin-left: 1vh;
+}
+
+.emojiList{
+    width: 3.3vw;
+    height: 3.3vw;
+    alt: pointer;
+}
+
+.bottomPart{
+    margin-top: 3vh;
+    width: 20%;
+
+}
+
+.wave{
+    animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
+    animation-iteration-count: 2;
+    position: relative;
+    transform-origin: bottom center;
+    width: 5.5vw;
+    height: 5.5vw;
+}
+
+.sideImg{
+    width: 55vw;
+    height: 55vw;
+    border-radius: 20%;
+}
+
+.waveHover:hover{
+    animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
+    position: relative;
+    transform-origin: bottom center;
+    display: inline-block
+}
+
+@keyframes wavingArm {
+    0% {
+        transform: rotate(0deg) translate(0px);
+    }
+    25%{
+        transform: rotate(40deg) translate(0px);
+    }
+    75% {
+        transform: rotate(-20deg) translate(0px);
+    }
+    100% {
+        transform: rotate(0deg) translate(0px);
+    }
+}
+
+::selection {
+    background: #ffd269; 
+}
+
+.skills{
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.skillsTitleLan{
+    font-size: 4vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    left: -1.5vw;
+}
+
+.skillsTitleIndus{
+    font-size: 4vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.skillsTitleSoft{
+    font-size: 4vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    left: -2.5vw;
+}
+
+.skillsTitleOther{
+    font-size: 4vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.sectionSkill{
+    padding-bottom: 4vh;
+    padding-top: 1vw;
+    vertical-align: top;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 0.5vh;
+    padding: 3vw;
+    font-size: 3.5vw;
+    text-align: left;
+    font-weight: bold;
+}
+
+.raiseText{
+    position: relative;
+    bottom: 0.5vw;
+    padding-left: 0.3vw;
+}
