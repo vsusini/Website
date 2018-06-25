@@ -43,7 +43,6 @@ a{
 }
 
 .mainMessage{
-    /*background-color: purple;*/
     position: absolute;
     top: 35%;
     left: 10%;
@@ -52,7 +51,6 @@ a{
 }
 
 .education{
-    /*background-color: green;*/
     margin: auto;
     width: 80%;
 }
@@ -95,7 +93,6 @@ a{
 }
 
 .experience{
-    /*background-color: aqua;*/
     margin: auto;
     width: 80%;
 }
@@ -139,7 +136,7 @@ a{
 
 .mainLink a,a:visited,a:hover,a:active{
     -webkit-backface-visibility:hidden;
-        backface-visibility:hidden;
+    backface-visibility:hidden;
 	position:relative;
     transition:0.5s color ease;
 	text-decoration:none;
@@ -153,7 +150,7 @@ a{
     content: "";
     transition:0.5s all ease;
     -webkit-backface-visibility:hidden;
-        backface-visibility:hidden;
+    backface-visibility:hidden;
     position:absolute;
 }
 .mainLink a.before:before{
@@ -180,7 +177,7 @@ a{
 
 .nav-pane a, .nav-pane a:visited,.nav-pane a:hover,.nav-pane a:active{
     -webkit-backface-visibility:hidden;
-        backface-visibility:hidden;
+    backface-visibility:hidden;
 	position:relative;
     transition:0.5s color ease;
 	text-decoration:none;
@@ -194,7 +191,7 @@ a{
     content: "";
     transition:0.5s all ease;
     -webkit-backface-visibility:hidden;
-        backface-visibility:hidden;
+    backface-visibility:hidden;
     position:absolute;
 }
 .nav-pane a.before:before{
@@ -215,24 +212,6 @@ a{
 
 .nav-pane a.before:hover:before,.nav-pane a.after:hover:after{
     width:100%;
-}
-
-/* End of All for the links in the positions*/
-
-footer{
-    background-color: #EEEEEE;
-    z-index: 1;
-}
-
-.footerTitle{
-    margin: auto;
-    width: 80%;
-}
-
-.footerDesc{
-    text-align: center;
-    font-size: 3vh;
-    padding: 2vh;
 }
 
 /* End of All for the links in the positions*/
@@ -274,13 +253,13 @@ footer{
     display: -moz-box;
     display: flex;
     -webkit-flex-direction: column;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
-        -moz-box-direction: normal;
-        box-direction: normal;
-            flex-direction: column;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    flex-direction: column;
     -webkit-justify-content: space-around;
-            justify-content: space-around;
+    justify-content: space-around;
     box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.5);
     float: right;
 }
@@ -291,7 +270,7 @@ footer{
         -webkit-transform: translateX(-300px);
         -moz-transform: translateX(-300px);
         -o-transform: translateX(-300px);
-                transform: translateX(-300px);
+        transform: translateX(-300px);
     }
 }
 
@@ -308,7 +287,7 @@ footer{
     -webkit-transform: translateX(154vw);
     -moz-transform: translateX(154vw);
     -o-transform: translateX(154vw);
-            transform: translateX(350%);
+    transform: translateX(350%);
     -webkit-transition: 250ms;
     -o-transition: 250ms;
     -moz-transition: 250ms;
@@ -357,9 +336,9 @@ footer{
     -moz-transition: 250ms;
     transition: 250ms;
     -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     top: 3px;
 }
 
@@ -381,9 +360,9 @@ footer{
     -moz-transition: 250ms;
     transition: 250ms;
     -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     bottom: 5px;
 }
 
@@ -459,8 +438,7 @@ footer{
 .social .gp{
     background: #DD4B39;
 }
-.social .gp:before,.social .gp:after
-{
+.social .gp:before,.social .gp:after {
     border-color: #DD4B39;
 }
 .social a:before,.social a:after{
