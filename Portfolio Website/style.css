@@ -161,12 +161,12 @@ footer .mainLink a,a:visited,a:hover,a:active{
     font-size: 2vw; /* Change size of the Link font */
 } 
 .mainLink a:hover{
-    color:#EA5548;
+    color:red;
     font-size: 4vh;
 }
 
 footer .mainLink a:hover{
-    color:#EA5548;
+    color:red;
     font-size: 2vw;
 }
 
@@ -187,7 +187,7 @@ footer .mainLink a:hover{
     height:5px;
     height:0.1rem;
     width:0;
-    background:#EA5548;
+    background:red;
 }
 .mainLink a.first:after{
     left:0;
