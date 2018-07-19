@@ -100,29 +100,10 @@ a{
     width: 80%;
 }
 
-.wrapperLigado{
-    margin:auto;
-    width: 70%;
-    padding-top: 4vh;
-    height: 53vh;
-}
-
 .wrapper{
     margin:auto;
     width: 70%;
     padding-top: 4vh;
-    height: 48vh;
-}
-
-
-.backHover{
-    margin: auto;
-    border-radius: 60px;
-    transition: background-color 1s ease-in-out;
-}
-
-.backHover:hover{
-    background-color: #ffe8b4;
 }
 
 .image{
@@ -156,7 +137,6 @@ a{
 
 .desc{
     font-size:2.25vh;
-    padding-bottom: 2vh;
 }
 
 /* All for the links in the positions*/

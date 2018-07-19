@@ -107,16 +107,6 @@ a{
     padding-top: 4vh;
 }
 
-.backHover{
-    margin: auto;
-    border-radius: 60px;
-    transition: background-color 1s ease-in-out;
-}
-
-.backHover:hover{
-    background-color: #ffe8b4;
-}
-
 .image{
     padding-right: 4vh;
 }
