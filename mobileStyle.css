@@ -107,6 +107,12 @@ a{
     padding-top: 4vh;
 }
 
+.wrapperLigado{
+    margin:auto;
+    width: 70%;
+    padding-top: 4vh;
+}
+
 .backHover{
     margin: auto;
     border-radius: 60px;
