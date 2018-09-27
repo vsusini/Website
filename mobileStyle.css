@@ -418,3 +418,11 @@ li{
     bottom: 0.5vw;
     padding-left: 0.3vw;
 }
+
+#section7{
+    display: none;
+}
+
+.demo{
+    display: none;
+}
