@@ -42,6 +42,13 @@ a{
 
 }
 
+.emojiTitleBeer{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 1vh;
+    margin-bottom: -1vh;
+}
+
 .mainMessage{
     position: absolute;
     top: 35%;

@@ -56,6 +56,11 @@ a{
     width: 80%;
 }
 
+.sideProjects{
+    margin: auto;
+    width: 80%;
+}
+
 .title{
     margin-top: 5%;
     margin-left: 30%;
@@ -306,6 +311,13 @@ footer{
     width: 2.5vw;
     height: 2.5vw;
     margin-left: 2vh;
+}
+
+.emojiTitleBeer{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 1vh;
+    margin-bottom: -1vh;
 }
 
 .emojiFooter{
