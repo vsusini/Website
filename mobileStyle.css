@@ -433,3 +433,43 @@ li{
 .demo{
     display: none;
 }
+
+footer{
+    padding-bottom: 10px;
+}
+
+.footerLinkHelper{
+    font-size: 2vw !important;
+}
+
+.footerLinkHelper:hover{
+    font-size:2vw !important;
+}
+
+.loveContainer{
+    text-align: center;
+}
+
+.withLove {
+    font-size: 2vw;
+    bottom: auto;
+    right: auto;
+  }
+  .withLove .heart {
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0 3px;
+	color: #e00;
+    animation: pound 1s infinite alternate;
+    -webkit-animation: pound 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes pound {
+    to {
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes pound {
+	to { transform: scale(1.3); }
+}

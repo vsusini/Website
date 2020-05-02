@@ -511,3 +511,43 @@ li{
         opacity: 0;
     }
 }
+
+footer{
+    padding-bottom: 10px;
+}
+
+.footerLinkHelper{
+    font-size: 1vw !important;
+}
+
+.footerLinkHelper:hover{
+    font-size:1vw !important;
+}
+
+.loveContainer{
+    text-align: center;
+}
+
+.withLove {
+    font-size: 1vw;
+    bottom: auto;
+    right: auto;
+  }
+  .withLove .heart {
+    display: inline-block;
+    font-size: 1vw;
+    margin: 0 3px;
+	color: #e00;
+    animation: pound 1s infinite alternate;
+    -webkit-animation: pound 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes pound {
+    to {
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes pound {
+	to { transform: scale(1.3); }
+}
