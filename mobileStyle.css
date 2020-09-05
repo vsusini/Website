@@ -339,6 +339,11 @@ footer{
     border-radius: 20%;
 }
 
+.sideProjects{
+    margin: auto;
+    width: 80%;
+}
+
 .waveHover:hover{
     animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
     position: relative;
