@@ -1,4 +1,4 @@
-# Vincent Susini's Profile Website
+# Profile Website
 
 ## Overview
 This repository contains the source code for my personal profile/resume website. It showcases my professional experience, skills, and projects using a responsive and interactive design. The live version of this website is deployed at [vsusini.com](https://vsusini.com).
