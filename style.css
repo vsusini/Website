@@ -18,7 +18,10 @@ html, body {
     font-family: Champ;
     color: #555;
     text-align: left;
-    background-color: white;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     scroll-behavior: smooth;
 }
 
@@ -29,18 +32,19 @@ a{
 .mainStart{
     height: 100vh;
     font-size: 7vh;
-    background-color:white;
 }
 
 .mainHi{
-    font-size: 7vh;
-    background-color: white;
+    font-size: 7vh; /* Matched to mainMessage font size */
     position: absolute;
     top: 20%;
     right: 20%;
     left: 10%;
     width: 20%;
-
+    display: flex;
+    align-items: center;
+    color: #555; /* Assuming this is the color of mainMessage text */
+    font-family: Champ; /* Matching the font family of mainMessage */
 }
 
 .mainMessage{
@@ -49,6 +53,7 @@ a{
     left: 10%;
     width: 60%;
     height: 50%;
+    font-size: 7vh;
 }
 
 .education{
@@ -63,9 +68,8 @@ a{
 
 .title{
     margin-top: 5%;
-    margin-left: 30%;
-    width: 45%;
     text-align: center;
+    overflow: hidden; /* Ensures the lines don't create horizontal scrollbars */
 }
 
 .script {
@@ -74,31 +78,34 @@ a{
     text-align: center;
     font-size: 2.5vw;
     position: relative;
-    margin:0;
-    z-index: 2;
-    padding-top: 4%;
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
 }
 
+.script::before,
+.script::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px; /* Adjust this value to change the line length */
+    border-bottom: 1.5px solid black;
+}
+
+.script::before {
+    right: 100%;
+}
+
+.script::after {
+    left: 100%;
+}
 
 .spanWhite{
-    background-color:white;
     padding: 0 0.3em;
 }
 
 .spanGrey{
-    background-color:#EEEEEE;
     padding: 0 0.3em;
-}
-
-.script:before {
-    content:"";
-    display: block;
-    position: absolute;
-    z-index:-1;
-    top: 50%;
-    width: 100%;
-    border-bottom: 1.5px solid black;
-    padding-top: 2%;
 }
 
 .experience{
@@ -222,7 +229,6 @@ footer .mainLink a:hover{
 }
 
 footer{
-    background-color: #EEEEEE;
     z-index: 1;
 }
 
@@ -332,35 +338,26 @@ footer{
     alt: pointer;
 }
 
-.wave{
-    animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
+.wave {
+    animation: wavingArm 2.5s ease-in-out;
     animation-iteration-count: 2;
-    position: relative;
     transform-origin: bottom center;
-    width: 3.5vw;
-    height: 3.5vw;
+    display: inline-block;
+    width: 6vh; /* Changed to vh to match text height */
+    height: 6vh; /* Changed to vh to match text height */
+    margin-left: 0.5vh; /* Add a small space between text and emoji */
 }
 
-.waveHover:hover{
-    animation: wavingArm 2s normal; /* infinte instead of normal if you don't want it to only happen once */
-    position: relative;
-    transform-origin: bottom center;
-    display: inline-block
+.waveHover:hover {
+    animation: wavingArm 2.5s ease-in-out infinite;
 }
 
 @keyframes wavingArm {
-    0% {
-        transform: rotate(0deg) translate(0px);
-    }
-    25%{
-        transform: rotate(40deg) translate(0px);
-    }
-    75% {
-        transform: rotate(-20deg) translate(0px);
-    }
-    100% {
-        transform: rotate(0deg) translate(0px);
-    }
+    0% { transform: rotate(0deg); }
+     25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
 }
 
 ::selection {

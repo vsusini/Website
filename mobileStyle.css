@@ -18,7 +18,11 @@ body {
     font-family: Champ;
     color: #555;
     text-align: left;
-    background-color: white;
+    /* Replace the solid white background with the gradient */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a{
@@ -28,12 +32,10 @@ a{
 .mainStart{
     height: 100vh;
     font-size: 7vh;
-    background-color:white;
 }
 
 .mainHi{
-    font-size: 5.5vh;
-    background-color: white;
+    font-size: 4vh;
     position: absolute;
     top: 20%;
     right: 20%;
@@ -55,7 +57,7 @@ a{
     left: 10%;
     width: 80%;
     height: 50%;
-    font-size: 5.5vh;
+    font-size: 4vh;
 }
 
 .education{
@@ -67,6 +69,7 @@ a{
     margin:auto;
     width: 60%;
     text-align: center;
+    margin-top: 2vh;
 }
 
 .script {
@@ -82,25 +85,39 @@ a{
 
 
 .spanWhite{
-    background-color:white;
     padding: 0 0.3em;
 }
 
 .spanGrey{
-    background-color:#EEEEEE;
     padding: 0 0.3em;
 }
 
-.script:before {
-    content:"";
-    display: block;
+.script {
+    font-family: "Champ";
+    color: black;
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.script::before,
+.script::after {
+    content: "";
     position: absolute;
-    z-index:-1;
     top: 50%;
-    width: 120%;
+    width: 50px; /* Adjust this value to change the line length */
     border-bottom: 1.5px solid black;
-    left: -3.5vw;
-    padding-top: 2%;
+}
+
+.script::before {
+    right: 100%;
+}
+
+.script::after {
+    left: 100%;
 }
 
 .experience{
@@ -127,7 +144,6 @@ a{
 }
 
 .backHover:hover{
-    background-color: #ffe8b4;
 }
 
 .image{
@@ -216,13 +232,12 @@ footer .mainLink a:hover{
 }
 
 footer{
-    background-color: #EEEEEE;
     z-index: 1;
 }
 
 .footerTitle{
     margin: auto;
-    width: 80%;
+    width: 80%
 }
 
 .footerDesc{
@@ -477,4 +492,9 @@ footer{
 
   @keyframes pound {
 	to { transform: scale(1.3); }
+}
+
+/* At the end of the file, you might want to add this to ensure the gradient covers the entire page on mobile */
+html, body {
+    min-height: 100vh;
 }
