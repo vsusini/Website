@@ -50,7 +50,7 @@ function App() {
               Science <img src={computer} alt="Computer" className="emojiOne" />
               graduate currently working at Telesat{" "}
               <img src={satellite} alt="Satellite" className="emojiOne" /> as a
-              Software Engineer.{" "}
+              Senior Software Engineer.{" "}
               <img src={male} alt="Male with Computer" className="emojiOne" />
             </p>
           </div>
