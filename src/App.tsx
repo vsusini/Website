@@ -76,7 +76,7 @@ function App() {
           emojiAlt="Satellite"
           title="Telesat"
           titleUrl="https://www.telesat.com/"
-          position="Software Engineer"
+          position="Senior Software Engineer"
           date="2021 March - Present"
           location="Ottawa, Ontario"
           desc={
