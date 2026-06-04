@@ -8,12 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "^24.0.10",
-    "gh-pages": "^6.3.0",
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",
